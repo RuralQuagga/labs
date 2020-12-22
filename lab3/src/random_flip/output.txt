@@ -1,0 +1,133 @@
+C:\Python38\python.exe F:/Google-Drive/Университет/магистратура/сорока-лабы/lab3/src/random_flip/random_flip.py
+2020-12-17 19:09:56.420308: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2020-12-17 19:10:00.526477: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-17 19:10:00.532872: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2020-12-17 19:10:00.596790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:06:00.0 name: GeForce GTX 1660 SUPER computeCapability: 7.5
+coreClock: 1.83GHz coreCount: 22 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-12-17 19:10:00.597118: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2020-12-17 19:10:00.627607: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2020-12-17 19:10:00.627752: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2020-12-17 19:10:00.669092: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2020-12-17 19:10:00.673420: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2020-12-17 19:10:00.691620: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2020-12-17 19:10:00.699059: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2020-12-17 19:10:00.701074: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2020-12-17 19:10:00.701273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2020-12-17 19:10:02.185295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-17 19:10:02.185397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2020-12-17 19:10:02.185452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2020-12-17 19:10:02.186452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4616 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 SUPER, pci bus id: 0000:06:00.0, compute capability: 7.5)
+2020-12-17 19:10:02.187754: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-17 19:10:02.189973: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-17 19:10:02.190102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:06:00.0 name: GeForce GTX 1660 SUPER computeCapability: 7.5
+coreClock: 1.83GHz coreCount: 22 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-12-17 19:10:02.190344: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2020-12-17 19:10:02.190529: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2020-12-17 19:10:02.190625: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2020-12-17 19:10:02.190779: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2020-12-17 19:10:02.190857: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2020-12-17 19:10:02.190934: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2020-12-17 19:10:02.191012: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2020-12-17 19:10:02.191091: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2020-12-17 19:10:02.191220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2020-12-17 19:10:02.191697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:06:00.0 name: GeForce GTX 1660 SUPER computeCapability: 7.5
+coreClock: 1.83GHz coreCount: 22 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-12-17 19:10:02.191851: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2020-12-17 19:10:02.191927: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2020-12-17 19:10:02.192000: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2020-12-17 19:10:02.192075: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2020-12-17 19:10:02.192530: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2020-12-17 19:10:02.192664: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2020-12-17 19:10:02.192759: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2020-12-17 19:10:02.192830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2020-12-17 19:10:02.192946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2020-12-17 19:10:02.193030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-17 19:10:02.193102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2020-12-17 19:10:02.193152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2020-12-17 19:10:02.193266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4616 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 SUPER, pci bus id: 0000:06:00.0, compute capability: 7.5)
+2020-12-17 19:10:02.193412: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-17 19:10:02.338367: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2020-12-17 19:11:45.218637: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-17 19:11:45.218707: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2020-12-17 19:11:45.219463: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1365] Profiler found 1 GPUs
+2020-12-17 19:11:45.228031: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cupti64_110.dll
+2020-12-17 19:11:45.308368: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-17 19:11:45.308742: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1487] CUPTI activity buffer flushed
+Epoch 1/100
+2020-12-17 19:11:45.974319: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2020-12-17 19:11:48.642427: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2020-12-17 19:11:48.751264: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2020-12-17 19:11:48.773202: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2020-12-17 19:11:49.795510: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+1/5 [=====>........................] - ETA: 22s - loss: 0.28972020-12-17 19:11:51.119718: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-17 19:11:51.119791: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2/5 [===========>..................] - ETA: 2s - loss: 0.2869 2020-12-17 19:11:51.867456: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2020-12-17 19:11:51.867739: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1487] CUPTI activity buffer flushed
+2020-12-17 19:11:51.959221: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 173 callback api events and 165 activity events. 
+2020-12-17 19:11:51.964365: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-17 19:11:51.988805: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51
+2020-12-17 19:11:51.995144: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.trace.json.gz
+2020-12-17 19:11:52.018570: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51
+2020-12-17 19:11:52.021655: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.memory_profile.json.gz
+2020-12-17 19:11:52.031420: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51Dumped tool data for xplane.pb to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.xplane.pb
+Dumped tool data for overview_page.pb to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.overview_page.pb
+Dumped tool data for input_pipeline.pb to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to C:/Users/Alex/Desktop/logs/train_data/20201217-191002\train\plugins\profile\2020_12_17_16_11_51\DESKTOP-81L2T6G.kernel_stats.pb
+
+5/5 [==============================] - 7s 362ms/step - loss: 0.2918
+2020-12-17 19:11:55.766641: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 800.00MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-12-17 19:11:55.766789: W tensorflow/core/kernels/gpu_utils.cc:49] Failed to allocate memory for convolution redzone checking; skipping this check. This is benign and only means that we won't check cudnn for out-of-bounds reads and writes. This message will only be printed once.
+Epoch 2/100
+5/5 [==============================] - 0s 50ms/step - loss: 0.2494
+Epoch 3/100
+5/5 [==============================] - 0s 49ms/step - loss: 0.1657
+Epoch 4/100
+5/5 [==============================] - 0s 43ms/step - loss: 0.1152
+Epoch 5/100
+5/5 [==============================] - 0s 42ms/step - loss: 0.0982
+Epoch 6/100
+5/5 [==============================] - 0s 42ms/step - loss: 0.1006
+Epoch 7/100
+5/5 [==============================] - 0s 42ms/step - loss: 0.1006
+Epoch 98/100
+5/5 [==============================] - 0s 41ms/step - loss: 0.0945
+Epoch 99/100
+5/5 [==============================] - 0s 40ms/step - loss: 0.0941
+Epoch 100/100
+5/5 [==============================] - 0s 40ms/step - loss: 0.0955
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+random_flip (RandomFlip)     (None, 224, 224, 1)       0         
+_________________________________________________________________
+input_1 (InputLayer)         multiple                  0         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 224, 224, 1)       5         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 112, 112, 32)      160       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 56, 56, 64)        8256      
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 28, 28, 128)       32896     
+_________________________________________________________________
+conv2d_transpose (Conv2DTran (None, 56, 56, 128)       65664     
+_________________________________________________________________
+conv2d_transpose_1 (Conv2DTr (None, 112, 112, 64)      32832     
+_________________________________________________________________
+conv2d_transpose_2 (Conv2DTr (None, 224, 224, 2)       514       
+=================================================================
+Total params: 140,327
+Trainable params: 140,327
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+Process finished with exit code 0

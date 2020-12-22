@@ -1,0 +1,1 @@
+tensorboard --logdir "C:\Users\Alex\Desktop\logs\train_data"

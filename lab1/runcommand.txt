@@ -1,0 +1,1 @@
+python "F:\Google-Drive\Университет\магистратура\сорока-лабы\lab1\src\build_image_data.py" --input "F:\Google-Drive\Университет\магистратура\сорока-лабы\lab3\src\50kdatasetsmall" --output "F:\Google-Drive\Университет\магистратура\сорока-лабы\lab3\src\50kdatasetsmall_tfr"

@@ -1,0 +1,74 @@
+C:\Python38\python.exe F:/Google-Drive/Университет/магистратура/сорока-лабы/lab3/src/random_crop/random_crop.py
+2020-12-19 01:38:09.471520: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2020-12-19 01:38:11.091419: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-19 01:38:11.093240: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2020-12-19 01:38:11.122073: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-12-19 01:38:11.132215: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: DESKTOP-81L2T6G
+2020-12-19 01:38:11.132340: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: DESKTOP-81L2T6G
+2020-12-19 01:38:11.132399: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-19 01:38:11.133044: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-19 01:38:11.133478: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-19 01:38:11.284310: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2020-12-19 01:38:27.625030: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-19 01:38:27.625118: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2020-12-19 01:38:27.661149: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Epoch 1/10
+1/4 [======>.......................] - ETA: 6s - loss: 0.49722020-12-19 01:38:29.989967: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-19 01:38:29.990033: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2/4 [==============>...............] - ETA: 1s - loss: 0.49282020-12-19 01:38:30.475523: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2020-12-19 01:38:30.485539: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-19 01:38:30.507810: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30
+2020-12-19 01:38:30.512748: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.trace.json.gz
+2020-12-19 01:38:30.529697: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30
+2020-12-19 01:38:30.532009: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.memory_profile.json.gz
+2020-12-19 01:38:30.542121: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30Dumped tool data for xplane.pb to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.xplane.pb
+Dumped tool data for overview_page.pb to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.overview_page.pb
+Dumped tool data for input_pipeline.pb to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to C:/Users/Alex/Desktop/logs/train_data/20201219-013811\train\plugins\profile\2020_12_18_22_38_30\DESKTOP-81L2T6G.kernel_stats.pb
+
+4/4 [==============================] - 3s 446ms/step - loss: 0.4869
+Epoch 2/10
+4/4 [==============================] - 2s 388ms/step - loss: 0.3965
+Epoch 3/10
+4/4 [==============================] - 2s 406ms/step - loss: 0.2718
+Epoch 4/10
+4/4 [==============================] - 2s 403ms/step - loss: 0.1592
+Epoch 5/10
+4/4 [==============================] - 2s 403ms/step - loss: 0.0949
+Epoch 6/10
+4/4 [==============================] - 2s 385ms/step - loss: 0.0737
+Epoch 7/10
+4/4 [==============================] - 2s 376ms/step - loss: 0.0734
+Epoch 8/10
+4/4 [==============================] - 2s 376ms/step - loss: 0.0810
+Epoch 9/10
+4/4 [==============================] - 2s 381ms/step - loss: 0.0840
+Epoch 10/10
+4/4 [==============================] - 2s 388ms/step - loss: 0.0830
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 224, 224, 1)       5         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 112, 112, 32)      160       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 56, 56, 64)        8256      
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 28, 28, 128)       32896     
+_________________________________________________________________
+conv2d_transpose (Conv2DTran (None, 56, 56, 128)       65664     
+_________________________________________________________________
+conv2d_transpose_1 (Conv2DTr (None, 112, 112, 64)      32832     
+_________________________________________________________________
+conv2d_transpose_2 (Conv2DTr (None, 224, 224, 2)       514       
+=================================================================
+Total params: 140,327
+Trainable params: 140,327
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+Process finished with exit code 0
