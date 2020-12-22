@@ -1,6 +1,7 @@
 __author__ = 'Alexander Soroka, soroka.a.m@gmail.com'
 __copyright__ = """Copyright 2020 Alexander Soroka"""
 
+import argparse
 import os
 # os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from datetime import datetime
@@ -35,8 +36,8 @@ def generator_train():
         layers.experimental.preprocessing.RandomFlip(mode='horizontal')
     ])
 
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    train_dir = Path(current_dir + f"/../{TRAIN_FOLDER}")
+    #current_dir = os.path.dirname(os.path.realpath(__file__))
+    train_dir = Path("G:/train_tf/")
     file_list_train = [str(pp) for pp in train_dir.glob("*")]
     i = 0;
     for fn in file_list_train:
@@ -49,9 +50,9 @@ def generator_train():
             yield (x, y)
 
 
-def generator_valid():
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    train_dir = Path(current_dir + f"/../{VALIDATION_FOLDER}")
+def generator_valid(args):
+    #current_dir = os.path.dirname(os.path.realpath(__file__))
+    train_dir = Path("G:/test_tfr/")
     file_list_train = [str(pp) for pp in train_dir.glob("*")]
     i = 0;
     for fn in file_list_train:
@@ -121,9 +122,9 @@ def create_dataset(filenames, batch_size):
         .prefetch(batch_size)
 
 
-def display_image_count():
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    train_dir = Path(current_dir + f"/../{TRAIN_FOLDER}")
+def display_image_count(args):
+    #current_dir = os.path.dirname(os.path.realpath(__file__))
+    train_dir = Path(args.train)
     file_list_train = [str(pp) for pp in train_dir.glob("*")]
     file_list_train = tf.random.shuffle(file_list_train)
     c = 0
@@ -132,7 +133,7 @@ def display_image_count():
             c += 1
     print(f'Count of train images: {c}')
 
-    valid_dir = Path(current_dir + f"/../{VALIDATION_FOLDER}")
+    valid_dir = Path(args.test)
     file_list_valid = [str(pp) for pp in valid_dir.glob("*")]
     file_list_valid = tf.random.shuffle(file_list_valid)
     v = 0
@@ -165,10 +166,15 @@ def build_model():
 
 
 def main():
+    args = argparse.ArgumentParser()
+    args.add_argument('--train', type=str, help='Glob pattern to collect train tfrecord files')
+    args.add_argument('--test', type=str, help='Glob pattern to collect test tfrecord files')
+    args = args.parse_args()
+
     log_dir = "C:/Users/dimas/Desktop/logs/train_data/" + datetime.now().strftime("%Y%m%d-%H%M%S")
     file_writer = tf.summary.create_file_writer(log_dir)
 
-    display_image_count()
+    display_image_count(args)
 
     train = tf.data.Dataset.from_generator(
         generator_train,

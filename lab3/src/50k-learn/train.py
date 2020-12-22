@@ -106,16 +106,17 @@ def main():
     args = argparse.ArgumentParser()
     args.add_argument('--train', type=str, help='Glob pattern to collect train tfrecord files')
     args.add_argument('--test', type=str, help='Glob pattern to collect test tfrecord files')
+    args = args.parse_args()
 
-    log_dir = "C:/Users/Alex/Desktop/logs/train_data/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+    log_dir = "C:/Users/dimas/Desktop/logs/train_data/" + datetime.now().strftime("%Y%m%d-%H%M%S")
 
-    current_dir = os.path.dirname(os.path.realpath(__file__))
+    #current_dir = os.path.dirname(os.path.realpath(__file__))
 
     # train_dir = Path(current_dir + "/50kdataset_tfr1")
-    train_dir = Path(current_dir + "/../50kdatasetsmall_tfr")
+    train_dir = Path(args.train)
     file_list_train = [str(pp) for pp in train_dir.glob("*")]
 
-    valid_dir = Path(current_dir + "/../validation_tfr")
+    valid_dir = Path(args.test)
     file_list_valid = [str(pp) for pp in valid_dir.glob("*")]
 
     train_dataset = create_dataset(file_list_train, BATCH_SIZE)

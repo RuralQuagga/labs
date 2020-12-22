@@ -1,1 +1,85 @@
-tensorboard --logdir "C:\Users\Alex\Desktop\logs\train_data"
+(venv) G:\AILab\labs\lab3>python G:\AILab\labs\lab2\src\train.py --train G:\archive\5k_tfr\ --test G:\archive\500test_tfr\
+2020-12-22 12:36:03.248080: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2020-12-22 12:36:03.248305: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2020-12-22 12:36:05.134826: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operati
+ons:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-22 12:36:05.136709: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2020-12-22 12:36:05.136808: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2020-12-22 12:36:05.139874: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: DESKTOP-A5KT5CI
+2020-12-22 12:36:05.140042: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: DESKTOP-A5KT5CI
+2020-12-22 12:36:05.140199: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-22 12:36:05.142576: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-22 12:36:05.142868: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-22 12:36:05.243542: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Count of train images: 5736
+Count of validation images: 744
+2020-12-22 12:36:22.514606: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-22 12:36:22.516968: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2020-12-22 12:36:22.525921: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Epoch 1/100
+1/4 [======>.......................] - ETA: 7s - loss: 0.26272020-12-22 12:36:25.531873: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-22 12:36:25.534470: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2/4 [==============>...............] - ETA: 1s - loss: 0.25292020-12-22 12:36:26.446563: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2020-12-22 12:36:26.477332: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-22 12:36:26.516579: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26
+2020-12-22 12:36:26.522202: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKT
+OP-A5KT5CI.trace.json.gz
+2020-12-22 12:36:26.541772: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26
+2020-12-22 12:36:26.544779: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36
+_26\DESKTOP-A5KT5CI.memory_profile.json.gz
+2020-12-22 12:36:26.565771: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26Dumped tool data for xplane.p
+b to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKTOP-A5KT5CI.xplane.pb
+Dumped tool data for overview_page.pb to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKTOP-A5KT5CI.overview_page.pb
+Dumped tool data for input_pipeline.pb to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKTOP-A5KT5CI.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKTOP-A5KT5CI.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to C:/Users/dimas/Desktop/logs/train_data/20201222-123605\train\plugins\profile\2020_12_22_09_36_26\DESKTOP-A5KT5CI.kernel_stats.pb
+
+4/4 [==============================] - 4s 687ms/step - loss: 0.2419
+2020-12-22 12:36:28.715033: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 12:36:29.337267: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 12:36:30.251066: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 12:36:31.602069: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 12:36:31.831344: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+Epoch 2/100
+4/4 [==============================] - 2s 465ms/step - loss: 0.2125
+Epoch 3/100
+4/4 [==============================] - 2s 451ms/step - loss: 0.1579
+Epoch 4/100
+4/4 [==============================] - 2s 433ms/step - loss: 0.1126
+...
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+random_flip (RandomFlip)     (None, 224, 224, 1)       0
+_________________________________________________________________
+random_crop (RandomCrop)     (None, 100, 100, 1)       0
+_________________________________________________________________
+resizing (Resizing)          (None, 224, 224, 1)       0
+_________________________________________________________________
+random_rotation (RandomRotat (None, 224, 224, 1)       0
+_________________________________________________________________
+input_1 (InputLayer)         multiple                  0
+_________________________________________________________________
+conv2d (Conv2D)              (None, 224, 224, 1)       5
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 112, 112, 32)      160
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 56, 56, 64)        8256
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 28, 28, 128)       32896
+_________________________________________________________________
+conv2d_transpose (Conv2DTran (None, 56, 56, 128)       65664
+_________________________________________________________________
+conv2d_transpose_1 (Conv2DTr (None, 112, 112, 64)      32832
+_________________________________________________________________
+conv2d_transpose_2 (Conv2DTr (None, 224, 224, 2)       514
+=================================================================
+Total params: 140,327
+Trainable params: 140,327
+Non-trainable params: 0
+_________________________________________________________________
+None
+

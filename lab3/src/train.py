@@ -1,6 +1,7 @@
 __author__ = 'Alexander Soroka, soroka.a.m@gmail.com'
 __copyright__ = """Copyright 2020 Alexander Soroka"""
 
+import argparse
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from datetime import datetime
@@ -93,16 +94,21 @@ def build_model():
 
 
 def main():
-    log_dir = "C:/Users/Alex/Desktop/logs/train_data/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+    args = argparse.ArgumentParser()
+    args.add_argument('--train', type=str, help='Glob pattern to collect train tfrecord files')
+    args.add_argument('--test', type=str, help='Glob pattern to collect test tfrecord files')
+    args = args.parse_args()
+
+    log_dir = "C:/Users/dimas/Desktop/logs/train_data/" + datetime.now().strftime("%Y%m%d-%H%M%S")
     file_writer = tf.summary.create_file_writer(log_dir)
 
     current_dir = os.path.dirname(os.path.realpath(__file__))
 
-    train_dir = Path(current_dir + "/../50kdatasetsmall_tfr")
+    train_dir = Path(args.train)
     file_list_train = [str(pp) for pp in train_dir.glob("*")]
     file_list_train = tf.random.shuffle(file_list_train)
 
-    valid_dir = Path(current_dir + "/../validation_tfr")
+    valid_dir = Path(args.test)
     file_list_valid = [str(pp) for pp in valid_dir.glob("*")]
     file_list_valid = tf.random.shuffle(file_list_valid)
 
