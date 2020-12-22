@@ -9,4 +9,4 @@
 4) Запустить скрипт
 
 Пример запуска скрипта.
-![Example of script run](https://github.com/SatsunkevichAlex/nns/blob/main/lab1/Result.png)
+![Example of script run](https://github.com/RuralQuagga/labs/blob/master/lab1/Result.png)
