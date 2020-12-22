@@ -178,28 +178,8 @@ if __name__ == '__main__':
 
 **Графики функции потерь для каждой пыптки**
 
-**Случайная часть изображения**
-![random-crop](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_crop/scalars.png)
-
-**Случайное горизонтальное отражение**
-![random-flip](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_flip/scalars.png)
-
-**Поворот на случайный угол**
-![random-rotation](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_rotation/scalars.png)
-
-**Все вместе**
-![all-together](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/rotation-crop-flip/scalars.png)
+![all-together](https://github.com/RuralQuagga/labs/blob/master/lab2/src/graphs.png)
 
 **Изображение после аугментации**
 
-**Случайная часть изображения**
-![random-crop](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_crop/augmented_crop.png)
-
-**Случайное горизонтальное отражение**
-![random-flip](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_flip/augmented_flip.png)
-
-**Поворот на случайный угол**
-![random-rotation](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/random_rotation/aumented-rotation.png)
-
-**Все вместе**
-![all-together](https://github.com/SatsunkevichAlex/nns/blob/main/lab3/src/rotation-crop-flip/augmented_all.png)
+![all-together](https://github.com/RuralQuagga/labs/blob/master/lab2/src/images.png)
