@@ -540,14 +540,8 @@ Process finished with exit code -1073740791 (0xC0000409)
 ```
 
 **Рузльтаты**
-Запуск 1. optimizer=tf.optimizers.Adam(lr=0.01)
-![1run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/images_1.png)
-![1run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/scalars1.png)
+optimizer=tf.optimizers.Adam(lr=0.01)
+![1run](https://github.com/RuralQuagga/labs/blob/master/lab4/runs/images.png)
+![1run](https://github.com/RuralQuagga/labs/blob/master/lab4/runs/scalars.png)
 
-Запуск 2. optimizer=tf.optimizers.Adam(lr=0.01)
-![2run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/images_2.png)
-![2run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/scalars2.png)
 
-Запуск 3. optimizer=tf.optimizers.SGD(lr=0.001, momentum=0.9)
-![3run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/images_3.png)
-![3run](https://github.com/SatsunkevichAlex/nns/blob/main/lab4/runs/scalars3.png)
